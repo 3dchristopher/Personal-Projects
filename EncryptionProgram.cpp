@@ -1,3 +1,7 @@
+//Program to Encrypt text files using RSA algorithm
+//Work in progress
+//Christopher Little
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -10,7 +14,9 @@ int binary(int x){
   string result;
   result.clear();
   string r;
-  while(x!=0) {r=(x%2==0 ?"0":"1")+r; x/=2;}
+  while(x!=0) {
+    r=(x%2==0 ?"0":"1")+r; x/=2;
+  }
   
   stringstream sstm;
   sstm << result << r;
@@ -142,8 +148,6 @@ int main(){
   
   return 0;
 }
-
-
 
 
 
